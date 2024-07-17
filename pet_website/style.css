@@ -359,7 +359,7 @@ header {
 
 @media (max-width: 576px) {
   header {
-    height: 75vh;
+    height: 100vh;
     min-height: 200px;
   }
   .navbar{
@@ -380,6 +380,7 @@ header {
   }
   .key-points {
     top: 70%;
+    width: 75% !important;
     padding: 5px;
     font-size: 1rem; 
   }
