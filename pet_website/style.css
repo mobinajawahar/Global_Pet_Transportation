@@ -68,16 +68,10 @@ header {
   font-size: 20px;
   font-weight: 600;
 }
-.navbar .nav-link:hover {
-  color: #d3d3d3 !important;
-}
 .btn-primary {
   background-color: #871F78;
   border: none;
   margin-right: 3%;
-}
-.btn-primary:hover {
-  background-color: #6f1768;
 }
 .social-icons a {
   margin-right: 20px; 
