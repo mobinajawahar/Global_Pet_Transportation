@@ -358,6 +358,10 @@ header {
 }
 
 @media (max-width: 576px) {
+  header {
+    height: 75vh;
+    min-height: 200px;
+  }
   .navbar{
     margin-top: 0% !important;
   }
