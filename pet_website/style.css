@@ -18,7 +18,7 @@ body, html {
   font-family: sans-serif;
 }
 header {
-  height: 125vh;
+  height: 120vh;
   min-height: 400px;
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@ header {
   color: white;
 }
 .custom-top-bar .center-text span {
-  font-weight: bold;
+  font-weight: 500;
 }
 .navbar {
   background-color: transparent !important;
@@ -65,8 +65,8 @@ header {
 .navbar .nav-link {
   color: #ffffff !important;
   margin: 0 10px;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 }
 .navbar .nav-link:hover {
   color: #d3d3d3 !important;
@@ -91,18 +91,18 @@ header {
   color: #ffffff;
 }
 .key-points {
-  top: 50%;
+  top: 45%;
   left: 5%;
-  width: 60% !important;
+  width: 80% !important;
   background-color: rgba(8,13,29,.23);
   color: #fff;
-  padding: 20px;
+  padding: 6px;
   border-radius: 5px;
   transform: translateY(-50%);
 }
 .ranked-box {
-  top: 70%;
-  right: 0.5%;
+  top: 75%;
+  right: 2%;
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   padding: 10px;
@@ -111,21 +111,14 @@ header {
   transform: translateY(-50%);
 }
 .ranked-box .star {
-  font-size: 2em;
+  font-size: 1.7em;
   letter-spacing: 4px;
   color: gold;
   text-align: left;
 }
 .ranked-box div{
-  font-size: 23px;
+  font-size: 22px !important;
   font-weight: 500;
-}
-.title-box {
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
 }
 .key-points h1 {
   font-size: 2.5rem;
@@ -137,7 +130,7 @@ header {
 }
 .image-and-tiles {
   position: absolute;
-  top: 100%;
+  top: 105%;
   width: 95%;
   right: 0.5%;
   display: flex;
@@ -176,6 +169,10 @@ header {
 }
 
 @media (max-width: 992px) {
+  header {
+    height: 110vh;
+    min-height: 300px;
+  }
   .custom-top-bar {
     padding: 5px 0; /* Adjust top bar padding */
   }
@@ -202,7 +199,8 @@ header {
     margin-right: 0; 
   }
   .key-points {
-    top: 45%;
+    top: 55%;
+    width: 80% !important;
     padding: 10px;
     font-size: 1.2rem; /* Adjust font size */
   }
@@ -215,8 +213,8 @@ header {
   }
   .image-and-tiles {
     position: absolute;
-    top: 84%!important;
-    width: 94% !important;
+    top: 100%!important;
+    width: 90% !important;
     right: 0.5% !important ;
     left: 5% !important;
     display: flex;
@@ -253,23 +251,15 @@ header {
     margin-top: 5px;
   }
   .ranked-box {
-    top: 62%;
-    padding: 5px;
-    right: 1%;
-  }
-  .ranked-box .star {
-    font-size: 1.5em;
-    letter-spacing: 4px;
-    color: gold;
-    text-align: left;
-  }
-  .ranked-box div{
-    font-size: 18px;
-    font-weight: 500;
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  header {
+    height: 100vh;
+    min-height: 200px;
+  }
   .custom-top-bar {
     padding: 5px 0; /* Adjust top bar padding */
   }
@@ -278,6 +268,13 @@ header {
     color: white;
     font-size:30px;
     letter-spacing: 5px;
+  }
+  .custom-top-bar .phone-number span{
+    font-size: 15px !important;
+  }
+  .custom-top-bar .middle-text span{
+    font-size: 15px !important;
+    font-weight: 200;
   }
   .logo{
     width: 50px !important;
@@ -290,7 +287,8 @@ header {
     margin-right: 10% !important;
   }
   .key-points {
-    top: 45%;
+    top: 60%;
+    width: 80% !important;
     padding: 10px;
     font-size: 1.2rem; /* Adjust font size */
   }
@@ -302,47 +300,12 @@ header {
     margin-bottom: 0px;
   }
   .image-and-tiles {
-    position: absolute;
-    top: 85%!important;
-    width: 94% !important;
-    right: 0.5% !important ;
-    left: 5% !important;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .image-and-tiles img {
-    width: 20% !important;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .stats-tile {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 20%;
-    margin: 10px;
-  }
-  .stats-tile i {
-    font-size: 1,5rem;
-    color: #871F78;
-  }
-  .stats-tile .stat-count {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  .stats-tile .stat-description {
-    font-size: 0.6rem;
-    margin-top: 5px;
+    display: none;
   }
   .ranked-box {
-    top: 64%;
+    top: 92% !important;
     padding: 5px;
+    right: 1%;
     font-size: 1rem; /* Adjust font size */
   }
   .ranked-box .star {
@@ -359,15 +322,18 @@ header {
 
 @media (max-width: 576px) {
   header {
-    height: 100vh;
-    min-height: 200px;
+    height: 70vh;
+    min-height: 150px;
   }
-  .navbar{
+  .navbar {
     margin-top: 0% !important;
+    background-color: white !important;
+    color: black;
   }
-  .nav-link{
-    font-size: 15px;
-    margin-right: 10px;
+  .navbar .nav-link {
+    color: black !important;
+    font-size: 15px !important;
+    font-weight: 500;
   }
   .btn-primary {
     margin-right: 5%;
@@ -379,8 +345,8 @@ header {
     display: none;
   }
   .key-points {
-    top: 70%;
-    width: 75% !important;
+    top: 60%;
+    width: 80% !important;
     padding: 5px;
     font-size: 1rem; 
   }
@@ -394,19 +360,13 @@ header {
     font-size: 12px;
   }
   .ranked-box {
-    top: 93%;
-  }
-  .ranked-box div{
-    font-size: 15px;
-  }
-  .title-box {
-    top: 50%;
-    font-size: 1rem; 
+    display: none;
   }
   .image-and-tiles {
     display: none;
   }
 }
+
 .custom-tabs-container {
   margin: 0 5%;
   background-color: #871F78;
